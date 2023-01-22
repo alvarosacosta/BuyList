@@ -17,14 +17,14 @@ public class CommandAddDelete implements Command {
         
         for (Producto pr : display.getListO().getList()) {
             if(pr.getCategoria().equals(duo[0]) && pr.getName().equals(duo[1])){
-                display.getListO().remove(duo[1]);
+                display.getListO().getList().remove(pr);
                 helper = false;
                 break;
             }
         }
         
         if(helper)
-            display.getListO().add(new Producto(duo[0], duo[1]));
+            display.getListO().getList().add(new Producto(duo[0], duo[1]));
     }
     
 }

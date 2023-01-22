@@ -23,19 +23,6 @@ public class Lista {
         return productos;
     }
     
-    public void add(Producto pr) {
-        productos.add(pr);
-    }
-    
-    public void remove(String name){
-        for (Producto producto : productos) {
-            if(producto.getName().equals(name)){
-                productos.remove(producto);
-                break;
-            }
-        }
-    }
-     
     @Override
     public String toString(){
         String result = "Tipo de lista: " + type + "\n";
